@@ -7,7 +7,7 @@ import java.util.List;
 
 @ApplicationScoped
 public class UserManager {
-    public List<User> userList = new ArrayList<User>();
+    private List<User> userList = new ArrayList<User>();
     public boolean existByUsername(String username) {
         for (User user : userList) {
             if (user.getUsername().equals(username)) {
